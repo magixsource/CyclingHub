@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="init-aaa" author="lin.peng">
+        <!-- application -->
+        <createTable tableName="application">
+            <column name="id" type="bigint(20)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="active" type="boolean"
+                    defaultValueBoolean="true"/>
+        </createTable>
+
+        <!-- account -->
+        <createTable tableName="account">
+            <column name="id" type="bigint(20)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="application_id" type="bigint(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_sync_time" type="datetime">
+            </column>
+            <column name="active" type="boolean"
+                    defaultValueBoolean="true"/>
+        </createTable>
+
+        <!-- activity -->
+        <createTable tableName="activity">
+            <column name="id" type="bigint(20)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_id" type="bigint(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hash_code" type="varchar(100)">
+            </column>
+            <column name="activity_date" type="datetime">
+            </column>
+        </createTable>
+
+        <rollback>
+            <dropTable tableName="application"/>
+            <dropTable tableName="account"/>
+            <dropTable tableName="activity"/>
+        </rollback>
+    </changeSet>
+    <changeSet id="app-addcolumn-url" author="lin.peng">
+        <!-- application -->
+        <addColumn tableName="application">
+            <column name="url" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>
