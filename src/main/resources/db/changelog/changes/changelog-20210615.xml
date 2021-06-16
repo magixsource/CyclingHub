@@ -80,8 +80,44 @@
             <column name="id" valueNumeric="1"/>
             <column name="name" value="STRAVA"/>
             <column name="code" value="strava"/>
-            <column name="type" value="HYBIRD"/>
+            <column name="type" value="STATISTIC"/>
             <column name="url" value="www.strava.com"/>
+        </insert>
+        <insert tableName="application">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="ZWIFT"/>
+            <column name="code" value="zwift"/>
+            <column name="type" value="CYCLING"/>
+            <column name="url" value="www.zwift.com"/>
+        </insert>
+        <insert tableName="application">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="ROUVY"/>
+            <column name="code" value="rouvy"/>
+            <column name="type" value="CYCLING"/>
+            <column name="url" value="www.rouvy.com"/>
+        </insert>
+        <insert tableName="application">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="POWERFUN"/>
+            <column name="code" value="powerfun"/>
+            <column name="type" value="CYCLING"/>
+            <column name="url" value="www.powerfun.com"/>
+        </insert>
+        <insert tableName="application">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="XINGZHE"/>
+            <column name="code" value="xingzhe"/>
+            <column name="type" value="STATISTIC"/>
+            <column name="url" value="www.imxingzhe.com/"/>
+        </insert>
+    </changeSet>
+    <changeSet id="insert-account-data" author="lin.peng">
+        <insert tableName="account">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_name" value="linpeng20210128@linpeng.com"/>
+            <column name="password" value="a12345678"/>
+            <column name="application_id" valueNumeric="2"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

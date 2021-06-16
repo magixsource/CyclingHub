@@ -16,6 +16,7 @@ public class Account {
     @JoinColumn(name = "application_id")
     private Application application;
     private Date lastSyncTime;
+    private Boolean active;
 
     public Long getId() {
         return id;
@@ -55,5 +56,13 @@ public class Account {
 
     public void setLastSyncTime(Date lastSyncTime) {
         this.lastSyncTime = lastSyncTime;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 }

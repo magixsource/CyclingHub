@@ -15,6 +15,7 @@ public class Application {
     @Enumerated(EnumType.STRING)
     private ApplicationTypeEnum type;
     private String url;
+    private Boolean active;
 
     public Long getId() {
         return id;
@@ -54,5 +55,13 @@ public class Application {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 }
