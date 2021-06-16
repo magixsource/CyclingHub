@@ -1,6 +1,8 @@
 package gl.linpeng.cyclinghub.model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 
 @Entity
@@ -9,6 +11,8 @@ public class Application {
     private Long id;
     private String name;
     private String code;
+
+    @Enumerated(EnumType.STRING)
     private ApplicationTypeEnum type;
     private String url;
 

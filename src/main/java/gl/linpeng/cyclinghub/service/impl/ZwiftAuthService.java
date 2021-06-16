@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.AuthHandler;
+import gl.linpeng.cyclinghub.service.AuthService;
 
 /**
  * Zwift auth handle
  */
-public class ZwiftAuthHandler implements AuthHandler {
+public class ZwiftAuthService implements AuthService {
     @Override
     public Object login() {
         return null;

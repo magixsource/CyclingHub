@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.AuthHandler;
+import gl.linpeng.cyclinghub.service.AuthService;
 
 /**
  * Rouvy auth handler
  */
-public class RouvyAuthHandler implements AuthHandler {
+public class RouvyAuthService implements AuthService {
     @Override
     public Object login() {
         return null;

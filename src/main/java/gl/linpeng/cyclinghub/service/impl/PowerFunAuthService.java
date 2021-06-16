@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.AuthHandler;
+import gl.linpeng.cyclinghub.service.AuthService;
 
 /**
  * PowerFun auth handler
  */
-public class PowerFunAuthHandler implements AuthHandler {
+public class PowerFunAuthService implements AuthService {
     @Override
     public Object login() {
         return null;

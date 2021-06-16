@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.StatisticHandler;
+import gl.linpeng.cyclinghub.service.StatisticService;
 
 /**
  * xingzhe app statistic handler
  */
-public class XingzheStatisticHandler implements StatisticHandler {
+public class XingzheStatisticService implements StatisticService {
 
     /**
      * POST

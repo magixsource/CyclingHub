@@ -1,9 +1,9 @@
-package gl.linpeng.cyclinghub.handle;
+package gl.linpeng.cyclinghub.service;
 
 /**
  * Statistic handler interface
  */
-public interface StatisticHandler {
+public interface StatisticService {
 
     /**
      * Upload fit file to application

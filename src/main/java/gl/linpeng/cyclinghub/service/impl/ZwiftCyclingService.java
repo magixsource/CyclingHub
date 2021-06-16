@@ -1,13 +1,14 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.CyclingHandler;
+import gl.linpeng.cyclinghub.service.CyclingService;
 
 import java.util.List;
 
 /**
- * Rouvy cycling handler
+ * Zwift cycling handler
  */
-public class RouvyCyclingHandler implements CyclingHandler {
+public class ZwiftCyclingService implements CyclingService {
+
     @Override
     public List getAllActivities() {
         return null;

@@ -75,4 +75,13 @@
             </column>
         </addColumn>
     </changeSet>
+    <changeSet id="insert-application-data" author="lin.peng">
+        <insert tableName="application">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="STRAVA"/>
+            <column name="code" value="strava"/>
+            <column name="type" value="HYBIRD"/>
+            <column name="url" value="www.strava.com"/>
+        </insert>
+    </changeSet>
 </databaseChangeLog>

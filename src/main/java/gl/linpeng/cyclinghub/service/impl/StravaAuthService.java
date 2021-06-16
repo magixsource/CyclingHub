@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle.impl;
+package gl.linpeng.cyclinghub.service.impl;
 
-import gl.linpeng.cyclinghub.handle.AuthHandler;
+import gl.linpeng.cyclinghub.service.AuthService;
 
 /**
  * Strava basic auth handler
  */
-public class StravaAuthHandler implements AuthHandler {
+public class StravaAuthService implements AuthService {
     @Override
     public Object login() {
         return null;

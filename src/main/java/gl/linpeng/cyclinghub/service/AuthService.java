@@ -1,9 +1,9 @@
-package gl.linpeng.cyclinghub.handle;
+package gl.linpeng.cyclinghub.service;
 
 /**
  * Application auth handler
  */
-public interface AuthHandler {
+public interface AuthService {
 
     /**
      * Login to application

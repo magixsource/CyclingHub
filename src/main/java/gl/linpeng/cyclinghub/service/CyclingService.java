@@ -1,11 +1,11 @@
-package gl.linpeng.cyclinghub.handle;
+package gl.linpeng.cyclinghub.service;
 
 import java.util.List;
 
 /**
  * Cycling handler interface
  */
-public interface CyclingHandler {
+public interface CyclingService {
 
 
     /**
